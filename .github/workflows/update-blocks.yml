@@ -1,0 +1,69 @@
+name: Update blocks
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays at 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-blocks
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: Update blocks.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update-blocks.py
+
+      - name: Check for registry changes
+        id: changes
+        run: |
+          if [ -n "$(git status --porcelain -- blocks.json)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "blocks.json unchanged; nothing to do."
+          fi
+
+      - name: Validate blocks.json against schema
+        if: steps.changes.outputs.changed == 'true'
+        run: pipx run check-jsonschema==0.39.0 --schemafile blocks.schema.json blocks.json
+
+      - name: Generate README.md
+        if: steps.changes.outputs.changed == 'true'
+        run: python3 scripts/generate-readme.py
+
+      - name: Open and merge pull request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: automation/update-blocks
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add blocks.json README.md
+          git commit -m "chore: update blocks registry"
+          git push --force origin "$BRANCH"
+          if [ -z "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[].number')" ]; then
+            gh pr create \
+              --base "${{ github.event.repository.default_branch }}" \
+              --head "$BRANCH" \
+              --title "Update blocks registry" \
+              --body "Automated update of \`blocks.json\` and \`README.md\` from the public repositories in this organization."
+          else
+            echo "PR already open; branch updated."
+          fi
+          gh pr merge "$BRANCH" --squash --delete-branch

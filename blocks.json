@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "blocks": [
+    {
+      "id": "custom-blocks-akida",
+      "category": "collection",
+      "description": "Edge Impulse custom blocks - giving early access to train and deploy akida spiking NNs",
+      "url": "https://github.com/edgeimpulse/custom-blocks-akida"
+    },
+    {
+      "id": "deployment-block-gradcam",
+      "category": "deployment",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/deployment-block-gradcam"
+    },
+    {
+      "id": "deployment-block-multi-impulse",
+      "category": "deployment",
+      "description": "Merge multiple impulses",
+      "url": "https://github.com/edgeimpulse/deployment-block-multi-impulse"
+    },
+    {
+      "id": "deployment-block-python",
+      "category": "deployment",
+      "description": "Example repository for https://docs.edgeimpulse.com/docs/edge-impulse-studio/organizations/custom-blocks/deployment-blocks",
+      "url": "https://github.com/edgeimpulse/deployment-block-python"
+    },
+    {
+      "id": "deployment-block-ros2",
+      "category": "deployment",
+      "description": "Clone Repo & Inject Edge Impulse Model",
+      "url": "https://github.com/edgeimpulse/deployment-block-ros2"
+    },
+    {
+      "id": "deployment-blocks-syntiant",
+      "category": "collection",
+      "description": "Examples of how to create a custom deployment block for Syntiant hardware",
+      "url": "https://github.com/edgeimpulse/deployment-blocks-syntiant"
+    },
+    {
+      "id": "labeling-block-audio-spectrogram-transformer",
+      "category": "labeling",
+      "description": "Label audio samples automatically with Audio Spectrogram Transformer (AST) model fine-tuned on AudioSet.",
+      "url": "https://github.com/edgeimpulse/labeling-block-audio-spectrogram-transformer"
+    },
+    {
+      "id": "labeling-block-bounding-box-relabeling-gpt4o",
+      "category": "labeling",
+      "description": "Relabel bounding boxes using an LLM",
+      "url": "https://github.com/edgeimpulse/labeling-block-bounding-box-relabeling-gpt4o"
+    },
+    {
+      "id": "labeling-block-bounding-box-validation-gpt4o",
+      "category": "labeling",
+      "description": "AI labeling block that uses GPT-4o to disable samples which do not conform to provided validation prompts. ",
+      "url": "https://github.com/edgeimpulse/labeling-block-bounding-box-validation-gpt4o"
+    },
+    {
+      "id": "labeling-block-existing-ei-project",
+      "category": "labeling",
+      "description": "Initial commit test.",
+      "url": "https://github.com/edgeimpulse/labeling-block-existing-ei-project"
+    },
+    {
+      "id": "labeling-block-images-gpt4o",
+      "category": "labeling",
+      "description": "WIP Labeling using ChatGPT",
+      "url": "https://github.com/edgeimpulse/labeling-block-images-gpt4o"
+    },
+    {
+      "id": "labeling-block-zero-shot-object-detector-astra",
+      "category": "labeling",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/labeling-block-zero-shot-object-detector-astra"
+    },
+    {
+      "id": "labeling-block-zero-shot-object-detector-owl-vit",
+      "category": "labeling",
+      "description": "Zero shot object detector AI Labeling",
+      "url": "https://github.com/edgeimpulse/labeling-block-zero-shot-object-detector-owl-vit"
+    },
+    {
+      "id": "learning-block-autoencoder-ad",
+      "category": "learning",
+      "description": "A 1D convolutional autoencoder anomaly detection custom learning block for Edge Impulse",
+      "url": "https://github.com/edgeimpulse/learning-block-autoencoder-ad"
+    },
+    {
+      "id": "learning-block-catboost",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-catboost"
+    },
+    {
+      "id": "learning-block-efficientnet",
+      "category": "learning",
+      "description": "EfficientNet transfer learning block for Edge Impulse",
+      "url": "https://github.com/edgeimpulse/learning-block-efficientnet"
+    },
+    {
+      "id": "learning-block-keras",
+      "category": "learning",
+      "description": "Custom Keras ML block example for Edge Impulse",
+      "url": "https://github.com/edgeimpulse/learning-block-keras"
+    },
+    {
+      "id": "learning-block-lgbm",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-lgbm"
+    },
+    {
+      "id": "learning-block-mobilenet-ssd",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-mobilenet-ssd"
+    },
+    {
+      "id": "learning-block-pytorch",
+      "category": "learning",
+      "description": "Custom PyTorch ML block example for Edge Impulse",
+      "url": "https://github.com/edgeimpulse/learning-block-pytorch"
+    },
+    {
+      "id": "learning-block-rl-core",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-rl-core"
+    },
+    {
+      "id": "learning-block-scikit",
+      "category": "learning",
+      "description": "Scikit learn block",
+      "url": "https://github.com/edgeimpulse/learning-block-scikit"
+    },
+    {
+      "id": "learning-block-sklearn-linear-models",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-sklearn-linear-models"
+    },
+    {
+      "id": "learning-block-sklearn-random-forest",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-sklearn-random-forest"
+    },
+    {
+      "id": "learning-block-svm",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-svm"
+    },
+    {
+      "id": "learning-block-tao-pyt",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-tao-pyt"
+    },
+    {
+      "id": "learning-block-tao-tf1",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-tao-tf1"
+    },
+    {
+      "id": "learning-block-xgboost",
+      "category": "learning",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-block-xgboost"
+    },
+    {
+      "id": "learning-block-yolov5",
+      "category": "learning",
+      "description": "YOLOv5 transfer learning model for Edge Impulse",
+      "url": "https://github.com/edgeimpulse/learning-block-yolov5"
+    },
+    {
+      "id": "learning-block-yolov5-drpai",
+      "category": "learning",
+      "description": "YOLOv5 transfer learning model for Edge Impulse running on Renesas DRP-AI ",
+      "url": "https://github.com/edgeimpulse/learning-block-yolov5-drpai"
+    },
+    {
+      "id": "learning-blocks-sklearn-linear-models",
+      "category": "collection",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/learning-blocks-sklearn-linear-models"
+    },
+    {
+      "id": "processing-block-c-cpp",
+      "category": "processing",
+      "description": "Example of a custom processing block in c/cpp",
+      "url": "https://github.com/edgeimpulse/processing-block-c-cpp"
+    },
+    {
+      "id": "processing-block-cpp",
+      "category": "processing",
+      "description": "Example DSP block in C++",
+      "url": "https://github.com/edgeimpulse/processing-block-cpp"
+    },
+    {
+      "id": "processing-block-edge-detection",
+      "category": "processing",
+      "description": "Processing block for Edge detection in images",
+      "url": "https://github.com/edgeimpulse/processing-block-edge-detection"
+    },
+    {
+      "id": "processing-block-matlab",
+      "category": "processing",
+      "description": "Example of a custom processing block in Matlab",
+      "url": "https://github.com/edgeimpulse/processing-block-matlab"
+    },
+    {
+      "id": "processing-block-octave",
+      "category": "processing",
+      "description": "Example of a custom processing block using Octave",
+      "url": "https://github.com/edgeimpulse/processing-block-octave"
+    },
+    {
+      "id": "processing-block-posenet",
+      "category": "processing",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/processing-block-posenet"
+    },
+    {
+      "id": "processing-block-python",
+      "category": "processing",
+      "description": "Example of a custom processing block in Python",
+      "url": "https://github.com/edgeimpulse/processing-block-python"
+    },
+    {
+      "id": "processing-block-spectral",
+      "category": "processing",
+      "description": "Example of a custom DSP block with C++ implementation",
+      "url": "https://github.com/edgeimpulse/processing-block-spectral"
+    },
+    {
+      "id": "synthetic-data-block-anglenorm",
+      "category": "synthetic-data",
+      "description": "AngleForge — Edge Impulse custom synthetic data block that normalises image camera angles for a consistent dataset, powered by the Qwen-Image-Edit multi-angle model on Hugging Face.",
+      "url": "https://github.com/edgeimpulse/synthetic-data-block-anglenorm"
+    },
+    {
+      "id": "synthetic-data-block-astra",
+      "category": "synthetic-data",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/synthetic-data-block-astra"
+    },
+    {
+      "id": "synthetic-data-block-dall-e",
+      "category": "synthetic-data",
+      "description": "Use the Dall-E API to generate an image dataset",
+      "url": "https://github.com/edgeimpulse/synthetic-data-block-dall-e"
+    },
+    {
+      "id": "synthetic-data-block-flux-pro",
+      "category": "synthetic-data",
+      "description": "Use Flux-pro via Replicate's API to generate very realistic images for synthetic data",
+      "url": "https://github.com/edgeimpulse/synthetic-data-block-flux-pro"
+    },
+    {
+      "id": "transformation-block-image-resize",
+      "category": "transformation",
+      "description": "This transformation block resizes all images in an Edge Impulse project using the same methods as in edge_impulse_linux. ",
+      "url": "https://github.com/edgeimpulse/transformation-block-image-resize"
+    },
+    {
+      "id": "transformation-block-mix-audio-noise-background",
+      "category": "transformation",
+      "description": "Transformation block that mixes custom background noise into audio files",
+      "url": "https://github.com/edgeimpulse/transformation-block-mix-audio-noise-background"
+    },
+    {
+      "id": "transformation-block-mix-audio-noise-snr",
+      "category": "transformation",
+      "description": "Synthetic data block to mix noise to audio files with SNR targets",
+      "url": "https://github.com/edgeimpulse/transformation-block-mix-audio-noise-snr"
+    },
+    {
+      "id": "transformation-block-python",
+      "category": "transformation",
+      "description": "A template transformation block in Python",
+      "url": "https://github.com/edgeimpulse/transformation-block-python"
+    },
+    {
+      "id": "transformation-block-text-to-speech",
+      "category": "transformation",
+      "description": "Use Google text-to-speech API to generate new keywords",
+      "url": "https://github.com/edgeimpulse/transformation-block-text-to-speech"
+    },
+    {
+      "id": "transformation-block-whisper-keywords",
+      "category": "transformation",
+      "description": "",
+      "url": "https://github.com/edgeimpulse/transformation-block-whisper-keywords"
+    }
+  ]
+}

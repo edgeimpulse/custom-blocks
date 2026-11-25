@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Custom Blocks Registry",
+  "type": "object",
+  "required": ["version", "blocks"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "category",
+          "description",
+          "url"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9._-]+$"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "collection",
+              "deployment",
+              "labeling",
+              "learning",
+              "processing",
+              "synthetic-data",
+              "transformation"
+            ]
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 350
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://github\\.com/edgeimpulse/[A-Za-z0-9._-]+$"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
