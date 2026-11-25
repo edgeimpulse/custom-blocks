@@ -236,6 +236,12 @@
       "url": "https://github.com/edgeimpulse/processing-block-spectral"
     },
     {
+      "id": "processing-blocks",
+      "category": "collection",
+      "description": "Signal processing blocks",
+      "url": "https://github.com/edgeimpulse/processing-blocks"
+    },
+    {
       "id": "synthetic-data-block-anglenorm",
       "category": "synthetic-data",
       "description": "AngleForge — Edge Impulse custom synthetic data block that normalises image camera angles for a consistent dataset, powered by the Qwen-Image-Edit multi-angle model on Hugging Face.",
@@ -294,6 +300,12 @@
       "category": "transformation",
       "description": "",
       "url": "https://github.com/edgeimpulse/transformation-block-whisper-keywords"
+    },
+    {
+      "id": "transformation-blocks",
+      "category": "collection",
+      "description": "Repository that contains transformation blocks examples",
+      "url": "https://github.com/edgeimpulse/transformation-blocks"
     }
   ]
 }
