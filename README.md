@@ -32,7 +32,7 @@ This page lists the public custom block example repositories in this GitHub orga
 | [labeling-block-audio-spectrogram-transformer](https://github.com/edgeimpulse/labeling-block-audio-spectrogram-transformer) | Label audio samples automatically with Audio Spectrogram Transformer (AST) model fine-tuned on AudioSet. |
 | [labeling-block-bounding-box-relabeling-gpt4o](https://github.com/edgeimpulse/labeling-block-bounding-box-relabeling-gpt4o) | Relabel bounding boxes using an LLM |
 | [labeling-block-bounding-box-validation-gpt4o](https://github.com/edgeimpulse/labeling-block-bounding-box-validation-gpt4o) | AI labeling block that uses GPT-4o to disable samples which do not conform to provided validation prompts. |
-| [labeling-block-existing-ei-project](https://github.com/edgeimpulse/labeling-block-existing-ei-project) | Initial commit test. |
+| [labeling-block-existing-ei-project](https://github.com/edgeimpulse/labeling-block-existing-ei-project) |  |
 | [labeling-block-images-gpt4o](https://github.com/edgeimpulse/labeling-block-images-gpt4o) | WIP Labeling using ChatGPT |
 | [labeling-block-zero-shot-object-detector-astra](https://github.com/edgeimpulse/labeling-block-zero-shot-object-detector-astra) |  |
 | [labeling-block-zero-shot-object-detector-owl-vit](https://github.com/edgeimpulse/labeling-block-zero-shot-object-detector-owl-vit) | Zero shot object detector AI Labeling |
