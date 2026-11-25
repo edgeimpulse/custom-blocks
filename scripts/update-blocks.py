@@ -23,21 +23,21 @@ OUTPUT = Path(__file__).resolve().parent.parent / "blocks.json"
 # Refuse to overwrite the registry if the block count falls by more than this fraction.
 MAX_DROP = 0.2
 BLOCK_PREFIXES = (
-    "deployment-block-",
-    "labeling-block-",
-    "learning-block-",
-    "processing-block-",
-    "synthetic-data-block-",
-    "transformation-block-",
+    "deployment-block",
+    "labeling-block",
+    "learning-block",
+    "processing-block",
+    "synthetic-data-block",
+    "transformation-block",
 )
 COLLECTION_PREFIXES = (
     "custom-blocks-",
-    "deployment-blocks-",
-    "labeling-blocks-",
-    "learning-blocks-",
-    "processing-blocks-",
-    "synthetic-data-blocks-",
-    "transformation-blocks-",
+    "deployment-blocks",
+    "labeling-blocks",
+    "learning-blocks",
+    "processing-blocks",
+    "synthetic-data-blocks",
+    "transformation-blocks",
 )
 
 
@@ -48,7 +48,7 @@ def categorize(name):
         return "collection"
     for prefix in BLOCK_PREFIXES:
         if name.startswith(prefix):
-            return prefix.removesuffix("-block-")
+            return prefix.removesuffix("-block")
     return None
 
 
