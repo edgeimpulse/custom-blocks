@@ -13,6 +13,8 @@ This page lists the public custom block example repositories in this GitHub orga
 | [custom-blocks-akida](https://github.com/edgeimpulse/custom-blocks-akida) | Edge Impulse custom blocks - giving early access to train and deploy akida spiking NNs |
 | [deployment-blocks-syntiant](https://github.com/edgeimpulse/deployment-blocks-syntiant) | Examples of how to create a custom deployment block for Syntiant hardware |
 | [learning-blocks-sklearn-linear-models](https://github.com/edgeimpulse/learning-blocks-sklearn-linear-models) |  |
+| [processing-blocks](https://github.com/edgeimpulse/processing-blocks) | Signal processing blocks |
+| [transformation-blocks](https://github.com/edgeimpulse/transformation-blocks) | Repository that contains transformation blocks examples |
 
 ## Individual blocks
 
